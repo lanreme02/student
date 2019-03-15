@@ -19,10 +19,10 @@ public class StudentEntity  {
 
 
     @JsonCreator
-    public StudentEntity (@JsonProperty("studentId") String courseId,
+    public StudentEntity (@JsonProperty("id") String studentId,
                         @JsonProperty("firstname") String firstName, @JsonProperty("lastname") String lastName){
 
-        this.studentId = courseId;
+        this.studentId = studentId;
         this.firstName = firstName;
         this.lastName = lastName;
     }
